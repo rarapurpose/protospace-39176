@@ -48,11 +48,21 @@
 - [x] 配布済みの画像を、指定されたディレクトリに配置した
 - [x] 既存のapplication.html.erbを、配布済みのapplication.html.erbに置き換えた
 - [x] サーバーを再起動して、ブラウザで表示を確かめた
+
 ## devise 
 
-- [ ]   deviseをGemfileに記述し、bundle installを実行した
-- [ ]  rails g devise:installでdeviseのインストールをした
-- [ ]  rails g devise userでUserモデルを作成した
-- [ ]  マイグレーションファイルに、ユーザー名、プロフィール、所属、役職を追加した
+- [x]   deviseをGemfileに記述し、bundle installを実行した
+- [x]  rails g devise:installでdeviseのインストールをした
+- [x]  rails g devise userでUserモデルを作成した
+- [x]  マイグレーションファイルに、ユーザー名、プロフィール、所属、役職を追加した
       （メールアドレスとパスワードについてはデフォルトでマイグレーションファイルに記載されているため、追記の必要はない）
-- [ ]  rails db:migrateを実行し、Sequel Proでusersテーブルが存在することを確かめた
+- [x]  rails db:migrateを実行し、Sequel Proでusersテーブルが存在することを確かめた
+- [x]  Userモデルに各カラムのバリデーションを記述した（「emailとpasswordが空だと保存できない」というバリデーションは標準で用意されているため、記述する必要はない）
+- [x]  rails g devise:viewsで関連するビューファイルを自動生成した
+- [x]  rails g devise:views」で作成した registrations/new.html.erb と sessions/new.html.erb を、配布済みのビューファイルに置き換えた
+- [ ]  ヘッダーの「新規登録」ボタンに適切なパスを記載した（devise/registrations#newに該当するパスを、rails routesを用いて確認する）
+- [ ]  registrations/new.html.erbのフォームを、正しい形に書き直した
+- [ ]  registrations/new.html.erbで「:hoge」と表記されている部分を、正しいものに修正した（PicTweetなどの新規登録ページも参考にする）
+- [ ]  application_controllerに、emailとpassword以外の値も保存できるように追記する（PicTweetなども参考にする
+- [ ]  サーバーを再起動し、正しく新規登録ができることを確かめた
+- [ ]  Sequel Proでusersテーブルに情報が保存されていることを確認した
