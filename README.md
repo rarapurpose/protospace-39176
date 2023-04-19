@@ -79,3 +79,16 @@
 - [x]  sessions/new.html.erbで「:hoge」と表記されている部分を、正しいものに修正した（PicTweetなどのログインページも参考にする）
 - [x]  サーバーを再起動し、ブラウザでログアウト/ログインができることを確認した
 - [x]  情報が正しくない、情報が欠けている場合は、新規登録・ログインができないことを確認した
+
+## 情報投稿機能を作成
+
+- [x]  rails g model prototypeでPrototypeモデルを作成した
+- [x]  マイグレーションファイルに、プロトタイプの名称、キャッチコピー、コンセプトのためのカラムを追加した
+- [x]  マイグレーションファイルに、userを参照するための外部キーを記述した（references型を用いる）
+- [x]  rails db:migrateを実行し、Sequel Proでprototypesテーブルが存在することを確かめた
+
+- [x]  mini_magickとimage_processingのGemをGemfileに記述し、bundle installを実行した（参考カリキュラムのとおり、
+- [x]  image_processingについてはバージョンの指定をする）
+- [x]  rails active_storage:installでActive Storageを導入した
+- [x]  rails db:migrateを実行した
+- [x]  Prototypeモデルに、has_one_attachedを使用してimageカラムとのアソシエーションを記述した
