@@ -86,9 +86,15 @@
 - [x]  マイグレーションファイルに、プロトタイプの名称、キャッチコピー、コンセプトのためのカラムを追加した
 - [x]  マイグレーションファイルに、userを参照するための外部キーを記述した（references型を用いる）
 - [x]  rails db:migrateを実行し、Sequel Proでprototypesテーブルが存在することを確かめた
-
+- [x]  Prototypeモデルにアソシエーションを記述した
+- [x]  Userモデルにアソシエーション記述した
 - [x]  mini_magickとimage_processingのGemをGemfileに記述し、bundle installを実行した（参考カリキュラムのとおり、
 - [x]  image_processingについてはバージョンの指定をする）
 - [x]  rails active_storage:installでActive Storageを導入した
 - [x]  rails db:migrateを実行した
 - [x]  Prototypeモデルに、has_one_attachedを使用してimageカラムとのアソシエーションを記述した
+- [x]  Prototypeモデルに、プロトタイプの名称、キャッチコピー、コンセプト、画像に関するバリデーションを記述した
+- [x]  prototypesコントローラーにnewアクションとcreateアクションを設定した（まだアクション内の処理は書かない）
+- [x]  resourcesを用いて、上記で設定したnewアクションとcreateアクションに対するルーティングをroutes.rbに記述した
+- [x]  rails routesを実行して、ルーティングが正しく設定できていることを確かめた
+- [x]  views/prototypesの中に、配布済みのnew.html.erbと_form.html.erbを配置した

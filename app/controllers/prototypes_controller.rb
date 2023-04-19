@@ -4,6 +4,18 @@ class PrototypesController < ApplicationController
 
   end
 
+  def new
+
+  end
+
+  def create
+
+  end
+
+  
+
+
+
   
 
  
