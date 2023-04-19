@@ -60,8 +60,9 @@
 - [x]  Userモデルに各カラムのバリデーションを記述した（「emailとpasswordが空だと保存できない」というバリデーションは標準で用意されているため、記述する必要はない）
 - [x]  rails g devise:viewsで関連するビューファイルを自動生成した
 - [x]  rails g devise:views」で作成した registrations/new.html.erb と sessions/new.html.erb を、配布済みのビューファイルに置き換えた
-- [ ]  ヘッダーの「新規登録」ボタンに適切なパスを記載した（devise/registrations#newに該当するパスを、rails routesを用いて確認する）
+- [ ]  ヘッダーの「新規登録」ボタンに適切なパスを記載した（devise/registrations#newに該当するパスを、rails routesを用いて確認する）⇒ターミナルで確認だけ　rails routes 
 - [ ]  registrations/new.html.erbのフォームを、正しい形に書き直した
+        ⇒rails routesで確認　url: user_session_path
 - [ ]  registrations/new.html.erbで「:hoge」と表記されている部分を、正しいものに修正した（PicTweetなどの新規登録ページも参考にする）
 - [ ]  application_controllerに、emailとpassword以外の値も保存できるように追記する（PicTweetなども参考にする
 - [ ]  サーバーを再起動し、正しく新規登録ができることを確かめた
