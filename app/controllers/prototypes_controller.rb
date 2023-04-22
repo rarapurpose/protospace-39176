@@ -24,11 +24,15 @@ class PrototypesController < ApplicationController
   end
 
   def show
-      @prototype = Prototype.find(params[:id])
+    @prototype = Prototype.find(params[:id])
+    @comment = Comment.new
+     
   end
+
 
   def edit
     @prototype = Prototype.find(params[:id])
+
   end
 
   def update
@@ -45,8 +49,8 @@ class PrototypesController < ApplicationController
     @prototype = Prototype.find(params[:id])
      @prototype.destroy
     redirect_to new
-  end
 
+  end
 
   private
   
