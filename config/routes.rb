@@ -5,8 +5,9 @@ Rails.application.routes.draw do
 
   resources :prototypes do
     resources :comments, only: [:create, :show]
-    resources :users, only: :show
+ 
   end
+  resources :users, only: :show
    
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   
